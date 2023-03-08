@@ -14,4 +14,4 @@ public class User {
 	private int age;
 	@DateTimeFormat(pattern="yyyy-MM-dd")
 	private LocalDate regDate;
-}
+}//
