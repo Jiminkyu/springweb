@@ -2,7 +2,6 @@ package com.my.spring.web.ch02.home;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -13,12 +12,12 @@ public class NumController {
 		return "ch02/home/numIn";
 	}
 	
-	@PostMapping("numOut")
-	public String numOut() {
-		return "";
+	
+	@GetMapping("numOut")
+	public String numOut(Number num) {
+		return "ch02/home/numOut";
 	}
 	
-	long x = (long)(Math.random() * 100);
 }
 /*
  * 폼에 자연수 하나를 입력한다.
